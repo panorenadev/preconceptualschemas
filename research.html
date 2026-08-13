@@ -1,1 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Investigación sobre Esquemas Preconceptuales: artículos científicos, tesis y trabajos académicos.">
+
+  <meta name="keywords"
+        content="Esquemas Preconceptuales, investigación, artículos, tesis, ingeniería de software, modelado conceptual">
+
+  <meta name="author"
+        content="Esquemas Preconceptuales">
+
+  <title>Investigación | Esquemas Preconceptuales</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+
+      margin: 0;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      color: #222;
+
+      background: #ffffff;
+
+      line-height: 1.6;
+
+    }
+
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    header {
+
+      max-width: 1150px;
+
+      margin: auto;
+
+      padding: 28px 40px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+    }
+
+
+    .logo {
+
+      color: #0b3d5c;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      font-size: 1.15rem;
+
+      letter-spacing: 0.5px;
+
+    }
+
+
+    nav a {
+
+      margin-left: 25px;
+
+      text-decoration: none;
+
+      color: #444;
+
+      font-size: 0.95rem;
+
+    }
+
+
+    nav a:hover {
+
+      color: #0b3d5c;
+
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero {
+
+      max-width: 950px;
+
+      margin: 75px auto 80px;
+
+      padding: 0 40px;
+
+    }
+
+
+    .hero h1 {
+
+      color: #0b3d5c;
+
+      font-size: 3.2rem;
+
+      line-height: 1.1;
+
+      margin-bottom: 25px;
+
+    }
+
+
+    .hero p {
+
+      max-width: 800px;
+
+      font-size: 1.2rem;
+
+      color: #555;
+
+    }
+
+
+    /* =========================
+       RESEARCH SECTIONS
+       ========================= */
+
+    .research-section {
+
+      max-width: 1000px;
+
+      margin: 70px auto;
+
+      padding: 0 40px;
+
+    }
+
+
+    .research-section h2 {
+
+      color: #0b3d5c;
+
+      font-size: 2rem;
+
+      margin-bottom: 35px;
+
+      padding-bottom: 12px;
+
+      border-bottom: 2px solid #0b3d5c;
+
+    }
+
+
+    /* =========================
+       PUBLICATION
+       ========================= */
+
+    .publication {
+
+      padding: 25px 0 30px;
+
+      border-bottom: 1px solid #ddd;
+
+    }
+
+
+    .publication:last-child {
+
+      border-bottom: none;
+
+    }
+
+
+    .publication-year {
+
+      font-size: 0.9rem;
+
+      color: #777;
+
+      font-weight: bold;
+
+      margin-bottom: 5px;
+
+    }
+
+
+    .publication h3 {
+
+      margin: 5px 0 10px;
+
+      font-size: 1.25rem;
+
+      line-height: 1.4;
+
+      color: #222;
+
+    }
+
+
+    .authors {
+
+      margin-bottom: 8px;
+
+      color: #444;
+
+    }
+
+
+    .source {
+
+      color: #666;
+
+      font-size: 0.95rem;
+
+      font-style: italic;
+
+    }
+
+
+    /* =========================
+       LINKS
+       ========================= */
+
+    .publication-links {
+
+      margin-top: 15px;
+
+    }
+
+
+    .publication-links a {
+
+      display: inline-block;
+
+      margin-right: 20px;
+
+      color: #0b3d5c;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      font-size: 0.9rem;
+
+    }
+
+
+    .publication-links a:hover {
+
+      text-decoration: underline;
+
+    }
+
+
+    /* =========================
+       SCHOLAR BUTTON
+       ========================= */
+
+    .scholar-box {
+
+      background: #f6f8fa;
+
+      padding: 35px;
+
+      margin-top: 30px;
+
+      text-align: center;
+
+      border-radius: 5px;
+
+    }
+
+
+    .scholar-box p {
+
+      color: #555;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    .button {
+
+      display: inline-block;
+
+      padding: 11px 22px;
+
+      background: #0b3d5c;
+
+      color: white;
+
+      text-decoration: none;
+
+      border-radius: 5px;
+
+    }
+
+
+    .button:hover {
+
+      background: #082d44;
+
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+
+      max-width: 1100px;
+
+      margin: auto;
+
+      padding: 35px 40px;
+
+      text-align: center;
+
+      color: #777;
+
+      font-size: 0.85rem;
+
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 750px) {
+
+      header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+      }
+
+
+      nav a {
+
+        margin: 0 8px;
+
+      }
+
+
+      .hero h1 {
+
+        font-size: 2.6rem;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+       ========================= -->
+
+  <header>
+
+    <a href="index.html" class="logo">
+
+      ESQUEMAS PRECONCEPTUALES
+
+    </a>
+
+
+    <nav>
+
+      <a href="book.html">Libro</a>
+
+      <a href="templates.html">Plantillas</a>
+
+      <a href="research.html">Investigación</a>
+
+      <a href="teaching.html">Enseñanza</a>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =========================
+       INTRODUCTION
+       ========================= -->
+
+  <section class="hero">
+
+    <h1>
+      Investigación
+    </h1>
+
+
+    <p>
+
+      Los Esquemas Preconceptuales han sido objeto de
+      investigación y aplicación en diferentes contextos
+      de la ingeniería de software.
+
+    </p>
+
+
+    <p>
+
+      Esta sección reúne artículos científicos, tesis y
+      otros trabajos académicos relacionados con su
+      desarrollo, evolución y aplicación.
+
+    </p>
+
+  </section>
+
+
+
+  <!-- =========================
+       ARTICLES
+       ========================= -->
+
+  <section class="research-section">
+
+
+    <h2>
+      Artículos científicos
+    </h2>
+
+
+
+    <!-- ARTICLE 1 -->
+
+    <article class="publication">
+
+
+      <div class="publication-year">
+        2026
+      </div>
+
+
+      <h3>
+
+        Título del artículo científico
+
+      </h3>
+
+
+      <div class="authors">
+
+        Autor 1, Autor 2, Autor 3
+
+      </div>
+
+
+      <div class="source">
+
+        Nombre de la revista o conferencia · 2026
+
+      </div>
+
+
+      <div class="publication-links">
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Publicación →
+
+        </a>
+
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Google Scholar →
+
+        </a>
+
+      </div>
+
+
+    </article>
+
+
+
+    <!-- ARTICLE 2 -->
+
+    <article class="publication">
+
+
+      <div class="publication-year">
+        2025
+      </div>
+
+
+      <h3>
+
+        Título de otro artículo científico
+
+      </h3>
+
+
+      <div class="authors">
+
+        Autor 1, Autor 2
+
+      </div>
+
+
+      <div class="source">
+
+        Nombre de la revista · 2025
+
+      </div>
+
+
+      <div class="publication-links">
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Publicación →
+
+        </a>
+
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Google Scholar →
+
+        </a>
+
+      </div>
+
+
+    </article>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       THESIS
+       ========================= -->
+
+  <section class="research-section">
+
+
+    <h2>
+      Tesis y trabajos de grado
+    </h2>
+
+
+
+    <!-- THESIS 1 -->
+
+    <article class="publication">
+
+
+      <div class="publication-year">
+        2025
+      </div>
+
+
+      <h3>
+
+        Título de la tesis o trabajo de grado
+
+      </h3>
+
+
+      <div class="authors">
+
+        Nombre del autor
+
+      </div>
+
+
+      <div class="source">
+
+        Programa académico · Universidad · 2025
+
+      </div>
+
+
+      <div class="publication-links">
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Repositorio →
+
+        </a>
+
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Google Scholar →
+
+        </a>
+
+      </div>
+
+
+    </article>
+
+
+
+    <!-- THESIS 2 -->
+
+    <article class="publication">
+
+
+      <div class="publication-year">
+        2024
+      </div>
+
+
+      <h3>
+
+        Título de otra tesis o trabajo de grado
+
+      </h3>
+
+
+      <div class="authors">
+
+        Nombre del autor
+
+      </div>
+
+
+      <div class="source">
+
+        Programa académico · Universidad · 2024
+
+      </div>
+
+
+      <div class="publication-links">
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Repositorio →
+
+        </a>
+
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Google Scholar →
+
+        </a>
+
+      </div>
+
+
+    </article>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       OTHER PUBLICATIONS
+       ========================= -->
+
+  <section class="research-section">
+
+
+    <h2>
+      Otras publicaciones
+    </h2>
+
+
+    <article class="publication">
+
+
+      <div class="publication-year">
+        2026
+      </div>
+
+
+      <h3>
+
+        Título de capítulo, ponencia u otra publicación
+
+      </h3>
+
+
+      <div class="authors">
+
+        Autor 1, Autor 2
+
+      </div>
+
+
+      <div class="source">
+
+        Evento, libro o publicación · 2026
+
+      </div>
+
+
+      <div class="publication-links">
+
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Ver publicación →
+
+        </a>
+
+      </div>
+
+
+    </article>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       GOOGLE SCHOLAR
+       ========================= -->
+
+  <section class="research-section">
+
+
+    <div class="scholar-box">
+
+
+      <h2>
+        Explora la investigación
+      </h2>
+
+
+      <p>
+
+        Consulta publicaciones relacionadas con los
+        Esquemas Preconceptuales en Google Académico.
+
+      </p>
+
+
+      <a
+        href="https://scholar.google.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button">
+
+        Buscar en Google Académico →
+
+      </a>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
+  <footer>
+
+    Esquemas Preconceptuales ·
+    Investigación y conocimiento académico
+
+  </footer>
+
+
+</body>
+
+</html>
