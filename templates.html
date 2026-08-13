@@ -1,1 +1,949 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Plantillas para crear Esquemas Preconceptuales utilizando Microsoft Visio y draw.io.">
+
+  <meta name="keywords"
+        content="Esquemas Preconceptuales, plantillas, Visio, draw.io, diagrams.net, modelado">
+
+  <meta name="author"
+        content="Esquemas Preconceptuales">
+
+  <title>Plantillas | Esquemas Preconceptuales</title>
+
+
+  <style>
+
+    * {
+      box-sizing: border-box;
+    }
+
+
+    body {
+
+      margin: 0;
+
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      color: #222;
+
+      background: #ffffff;
+
+      line-height: 1.6;
+
+    }
+
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    header {
+
+      max-width: 1150px;
+
+      margin: auto;
+
+      padding: 28px 40px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+    }
+
+
+    .logo {
+
+      color: #0b3d5c;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+      font-size: 1.15rem;
+
+      letter-spacing: 0.5px;
+
+    }
+
+
+    nav a {
+
+      margin-left: 25px;
+
+      text-decoration: none;
+
+      color: #444;
+
+      font-size: 0.95rem;
+
+    }
+
+
+    nav a:hover {
+
+      color: #0b3d5c;
+
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero {
+
+      max-width: 950px;
+
+      margin: 75px auto 70px;
+
+      padding: 0 40px;
+
+    }
+
+
+    .hero h1 {
+
+      color: #0b3d5c;
+
+      font-size: 3.2rem;
+
+      line-height: 1.1;
+
+      margin-bottom: 25px;
+
+    }
+
+
+    .hero p {
+
+      max-width: 800px;
+
+      font-size: 1.2rem;
+
+      color: #555;
+
+    }
+
+
+    /* =========================
+       TUTORIAL
+       ========================= */
+
+    .tutorial {
+
+      background: #f6f8fa;
+
+      padding: 75px 40px;
+
+    }
+
+
+    .tutorial-content {
+
+      max-width: 1000px;
+
+      margin: auto;
+
+    }
+
+
+    .tutorial h2 {
+
+      color: #0b3d5c;
+
+      font-size: 2rem;
+
+      margin-bottom: 15px;
+
+    }
+
+
+    .tutorial-description {
+
+      color: #555;
+
+      max-width: 750px;
+
+      margin-bottom: 35px;
+
+    }
+
+
+    .video {
+
+      position: relative;
+
+      width: 100%;
+
+      max-width: 900px;
+
+      margin: auto;
+
+      padding-bottom: 56.25%;
+
+      height: 0;
+
+      overflow: hidden;
+
+      background: #000;
+
+    }
+
+
+    .video iframe {
+
+      position: absolute;
+
+      width: 100%;
+
+      height: 100%;
+
+      left: 0;
+
+      top: 0;
+
+      border: 0;
+
+    }
+
+
+    /* =========================
+       TEMPLATES
+       ========================= */
+
+    .templates {
+
+      max-width: 1100px;
+
+      margin: 85px auto;
+
+      padding: 0 40px;
+
+    }
+
+
+    .templates h2 {
+
+      color: #0b3d5c;
+
+      font-size: 2rem;
+
+      margin-bottom: 15px;
+
+    }
+
+
+    .templates-intro {
+
+      max-width: 750px;
+
+      color: #666;
+
+      margin-bottom: 45px;
+
+    }
+
+
+    .template-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      gap: 35px;
+
+    }
+
+
+    /* =========================
+       TEMPLATE CARD
+       ========================= */
+
+    .template-card {
+
+      border: 1px solid #ddd;
+
+      border-radius: 6px;
+
+      overflow: hidden;
+
+      background: #ffffff;
+
+      box-shadow:
+        0 5px 18px rgba(0,0,0,0.06);
+
+    }
+
+
+    .template-image {
+
+      width: 100%;
+
+      height: 260px;
+
+      background: #f4f5f6;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      overflow: hidden;
+
+    }
+
+
+    .template-image img {
+
+      width: 100%;
+
+      height: 100%;
+
+      object-fit: contain;
+
+    }
+
+
+    .template-content {
+
+      padding: 25px;
+
+    }
+
+
+    .template-content h3 {
+
+      margin-top: 0;
+
+      color: #0b3d5c;
+
+      font-size: 1.4rem;
+
+    }
+
+
+    .template-content p {
+
+      color: #666;
+
+      font-size: 0.95rem;
+
+    }
+
+
+    .tool {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      padding: 5px 10px;
+
+      background: #eef3f6;
+
+      color: #0b3d5c;
+
+      border-radius: 4px;
+
+      font-size: 0.8rem;
+
+      font-weight: bold;
+
+    }
+
+
+    /* =========================
+       BUTTON
+       ========================= */
+
+    .button {
+
+      display: inline-block;
+
+      margin-top: 10px;
+
+      padding: 10px 18px;
+
+      background: #0b3d5c;
+
+      color: white;
+
+      text-decoration: none;
+
+      border-radius: 5px;
+
+      font-size: 0.9rem;
+
+    }
+
+
+    .button:hover {
+
+      background: #082d44;
+
+    }
+
+
+    .secondary-button {
+
+      background: white;
+
+      color: #0b3d5c;
+
+      border: 1px solid #0b3d5c;
+
+      margin-left: 8px;
+
+    }
+
+
+    .secondary-button:hover {
+
+      background: #f0f4f6;
+
+    }
+
+
+    /* =========================
+       NOTE
+       ========================= */
+
+    .note {
+
+      margin-top: 45px;
+
+      padding: 25px;
+
+      border-left: 4px solid #0b3d5c;
+
+      background: #f6f8fa;
+
+      color: #555;
+
+    }
+
+
+    /* =========================
+       REPOSITORY
+       ========================= */
+
+    .repository {
+
+      background: #0b3d5c;
+
+      color: white;
+
+      padding: 75px 40px;
+
+      text-align: center;
+
+    }
+
+
+    .repository-content {
+
+      max-width: 750px;
+
+      margin: auto;
+
+    }
+
+
+    .repository h2 {
+
+      font-size: 2rem;
+
+      margin-top: 0;
+
+    }
+
+
+    .repository p {
+
+      margin-bottom: 30px;
+
+      color: #f0f0f0;
+
+    }
+
+
+    .repository .button {
+
+      background: white;
+
+      color: #0b3d5c;
+
+    }
+
+
+    .repository .button:hover {
+
+      background: #eeeeee;
+
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+
+      max-width: 1100px;
+
+      margin: auto;
+
+      padding: 35px 40px;
+
+      text-align: center;
+
+      color: #777;
+
+      font-size: 0.85rem;
+
+    }
+
+
+    /* =========================
+       RESPONSIVE
+       ========================= */
+
+    @media (max-width: 750px) {
+
+      header {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+      }
+
+
+      nav a {
+
+        margin: 0 8px;
+
+      }
+
+
+      .hero h1 {
+
+        font-size: 2.6rem;
+
+      }
+
+
+      .template-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+
+      .secondary-button {
+
+        margin-left: 0;
+
+        margin-top: 10px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+       ========================= -->
+
+  <header>
+
+    <a href="index.html" class="logo">
+
+      Home
+
+    </a>
+
+
+    <nav>
+
+      <a href="book.html">Libro</a>
+
+      <a href="templates.html">Plantillas</a>
+
+      <a href="research.html">Investigación</a>
+
+      <a href="teaching.html">Enseñanza</a>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =========================
+       HERO
+       ========================= -->
+
+  <section class="hero">
+
+    <h1>
+      Plantillas
+    </h1>
+
+
+    <p>
+
+      Crea Esquemas Preconceptuales utilizando
+      herramientas de diagramación conocidas como
+      Microsoft Visio y draw.io.
+
+    </p>
+
+
+    <p>
+
+      Las plantillas proporcionan los elementos gráficos
+      necesarios para construir los diferentes componentes
+      de los Esquemas Preconceptuales y facilitar su
+      aplicación en proyectos académicos y de software.
+
+    </p>
+
+  </section>
+
+
+
+  <!-- =========================
+       TUTORIAL
+       ========================= -->
+
+  <section class="tutorial">
+
+    <div class="tutorial-content">
+
+      <h2>
+        ¿Cómo utilizar las plantillas?
+      </h2>
+
+
+      <p class="tutorial-description">
+
+        En este video encontrarás una guía para agregar
+        las plantillas a la herramienta de diagramación
+        y comenzar a crear Esquemas Preconceptuales.
+
+      </p>
+
+
+      <div class="video">
+
+        <!--
+          REEMPLAZAR VIDEO_ID POR EL ID
+          REAL DEL VIDEO DE YOUTUBE
+        -->
+
+        <iframe
+
+          src="https://www.youtube.com/embed/VIDEO_ID"
+
+          title="Cómo utilizar las plantillas de Esquemas Preconceptuales"
+
+          allow="accelerometer; autoplay; clipboard-write;
+                 encrypted-media; gyroscope; picture-in-picture;
+                 web-share"
+
+          allowfullscreen>
+
+        </iframe>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       TEMPLATES
+       ========================= -->
+
+  <section class="templates">
+
+
+    <h2>
+      Plantillas disponibles
+    </h2>
+
+
+    <p class="templates-intro">
+
+      Selecciona la herramienta de diagramación que
+      deseas utilizar y descarga las plantillas
+      correspondientes desde nuestro repositorio.
+
+    </p>
+
+
+
+    <div class="template-grid">
+
+
+      <!-- =====================
+           VISIO
+           ===================== -->
+
+      <article class="template-card">
+
+
+        <div class="template-image">
+
+          <!--
+            Guarda una imagen de ejemplo como:
+
+            img/visio-template.jpg
+          -->
+
+          <img
+
+            src="img/visio-template.jpg"
+
+            alt="Plantilla de Esquemas Preconceptuales para Microsoft Visio">
+
+        </div>
+
+
+        <div class="template-content">
+
+
+          <span class="tool">
+            MICROSOFT VISIO
+          </span>
+
+
+          <h3>
+            Plantillas para Visio
+          </h3>
+
+
+          <p>
+
+            Plantillas para crear y diagramar
+            Esquemas Preconceptuales utilizando
+            Microsoft Visio.
+
+          </p>
+
+
+          <!--
+            REEMPLAZAR # POR EL ENLACE
+            AL REPOSITORIO DE VISIO
+          -->
+
+          <a
+
+            href="#"
+
+            target="_blank"
+
+            rel="noopener noreferrer"
+
+            class="button">
+
+            Descargar plantilla →
+
+          </a>
+
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =====================
+           DRAW.IO
+           ===================== -->
+
+      <article class="template-card">
+
+
+        <div class="template-image">
+
+          <!--
+            Guarda una imagen de ejemplo como:
+
+            img/drawio-template.jpg
+          -->
+
+          <img
+
+            src="img/drawio-template.jpg"
+
+            alt="Plantilla de Esquemas Preconceptuales para draw.io">
+
+        </div>
+
+
+        <div class="template-content">
+
+
+          <span class="tool">
+            DRAW.IO
+          </span>
+
+
+          <h3>
+            Plantillas para draw.io
+          </h3>
+
+
+          <p>
+
+            Plantillas para crear Esquemas
+            Preconceptuales utilizando draw.io
+            (diagrams.net).
+
+          </p>
+
+
+          <!--
+            REEMPLAZAR # POR EL ENLACE
+            AL REPOSITORIO DE DRAW.IO
+          -->
+
+          <a
+
+            href="#"
+
+            target="_blank"
+
+            rel="noopener noreferrer"
+
+            class="button">
+
+            Descargar plantilla →
+
+          </a>
+
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         NOTE
+         ========================= -->
+
+    <div class="note">
+
+      <strong>
+        Nota:
+      </strong>
+
+      Las plantillas están diseñadas para facilitar
+      la creación de Esquemas Preconceptuales en
+      diferentes herramientas de diagramación.
+      Consulta el tutorial antes de comenzar.
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       REPOSITORY
+       ========================= -->
+
+  <section class="repository">
+
+
+    <div class="repository-content">
+
+
+      <h2>
+        Repositorio de plantillas
+      </h2>
+
+
+      <p>
+
+        Encuentra las plantillas, archivos y recursos
+        disponibles para crear Esquemas Preconceptuales.
+
+      </p>
+
+
+      <!--
+        REEMPLAZAR # POR LA URL
+        REAL DEL REPOSITORIO
+      -->
+
+      <a
+
+        href="#"
+
+        target="_blank"
+
+        rel="noopener noreferrer"
+
+        class="button">
+
+        Explorar repositorio →
+
+      </a>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+
+  <footer>
+
+    Esquemas Preconceptuales ·
+    Plantillas y recursos de modelado
+
+  </footer>
+
+
+</body>
+
+</html>
