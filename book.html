@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="citation_title" content="Manual para la creación de Esquemas preconceptuales>
+
+  <!-- Metadatos académicos -->
+  <meta name="citation_title" content="Manual para la creación de Esquemas Preconceptuales">
   <meta name="citation_author" content="Carlos Mario Zapata">
   <meta name="citation_author" content="Paola Noreña">
   <meta name="citation_author" content="Elizabeth Suescún">
@@ -12,83 +15,205 @@
   <meta name="citation_isbn" content="978-628-7691-78-0">
   <meta name="citation_publication_place" content="Medellín, Colombia">
 
+  <meta name="description" content="Manual para la creación de Esquemas Preconceptuales: guía académica para modelar sistemas de software.">
+
   <title>Manual para la creación de Esquemas Preconceptuales</title>
+
   <style>
-   body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  color: #222;
-}
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    header {
+      max-width: 1150px;
+      margin: auto;
+      padding: 28px 40px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #0b3d5c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.15rem;
+      letter-spacing: 0.5px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #0b3d5c;
+    }
+
+    /* =========================
+       CONTENT
+       ========================= */
+
     .content {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
-}
-    h1 { color: #0b3d5c; }
-    .boton {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px;
+    }
+
+    h1 {
+      color: #0b3d5c;
+      font-size: 2.6rem;
+      line-height: 1.2;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #0b3d5c;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    .book-cover {
+      text-align: center;
+      margin: 35px 0 45px;
+    }
+
+    .book-cover img {
+      max-width: 350px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.12);
+      transition: transform 0.2s ease;
+    }
+
+    .book-cover img:hover {
+      transform: translateY(-3px);
+    }
+
+    .authors {
+      font-size: 1.05rem;
+      color: #444;
+    }
+
+    .editorial-box {
+      background: #f6f8fa;
+      border-left: 4px solid #0b3d5c;
+      padding: 18px 20px;
+      margin: 30px 0;
+    }
+
+    .editorial-box p {
+      margin: 6px 0;
+    }
+
+    .button {
       display: inline-block;
       padding: 12px 20px;
-      margin: 10px 10px 10px 0;
+      margin: 12px 12px 12px 0;
       background: #0b3d5c;
       color: white;
       text-decoration: none;
       border-radius: 6px;
+      font-size: 0.95rem;
     }
+
+    .button:hover {
+      background: #082d44;
+    }
+
+    .citation {
+      background: #fafafa;
+      padding: 18px;
+      border-radius: 6px;
+      border: 1px solid #e1e1e1;
+      margin-top: 15px;
+    }
+
+    .back-link {
+      margin-top: 40px;
+    }
+
+    .back-link a {
+      color: #0b3d5c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+
     /* =========================
-   HEADER
-   ========================= */
+       FOOTER
+       ========================= */
 
-header {
-  max-width: 1150px;
-  margin: auto;
-  padding: 28px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    footer {
+      max-width: 1100px;
+      margin: auto;
+      padding: 35px 40px;
+      text-align: center;
+      color: #777;
+      font-size: 0.85rem;
+    }
 
-}
+    /* =========================
+       RESPONSIVE
+       ========================= */
 
-.logo {
-  color: #0b3d5c;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.15rem;
-  letter-spacing: 0.5px;
-
-}
-
-nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #444;
-  font-size: 0.95rem;
-}
-
-
-nav a:hover {
-  color: #0b3d5c;
-}
     @media (max-width: 750px) {
-  header {
-    flex-direction: column;
-    gap: 20px;
-  }
 
-  nav a {
-    margin: 0 8px;
-  }
+      header {
+        flex-direction: column;
+        gap: 20px;
+      }
 
-}
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .content {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
   </style>
 </head>
 
-  
+
 <body>
+
+  <!-- =========================
+       HEADER
+       ========================= -->
+
   <header>
 
     <a href="index.html" class="logo">
-      Home
+      ESQUEMAS PRECONCEPTUALES
     </a>
 
     <nav>
@@ -99,40 +224,110 @@ nav a:hover {
     </nav>
 
   </header>
-  <h1>Manual para la creación de Esquemas Preconceptuales</h1>
 
-  <div style="text-align:center; margin:30px 0;">
-  <img src="img/portada.jpg"
-       alt="Portada del libro"
-       style="max-width:350px; width:100%; border-radius:8px;">
-</div>
 
-  <h2>Autores</h2>
-  <p>Carlos Mario Zapata, Paola Noreña y Elizabeth Suescún</p>
 
-  <h2>Resumen</h2>
-  <p>
-    Este manual ofrece una guía completa para la creación de esquemas preconceptuales (EP), un modelo intermedio entre el lenguaje natural y los esquemas conceptuales o lenguajes formales. Los EP permiten representar sistemas de software en etapas tempranas de análisis y diseño mediante una notación que integra características estructurales (elementos estáticos y sus relaciones), dinámicas (interacciones, cambios en el tiempo y comportamiento), télicas (objetivos y problemas) y eventuales (eventos que desencadenan comportamientos).
- </p>
-  <p>
-    A lo largo del manual, se establece la equivalencia de los EP con esquemas conceptuales, artefactos ágiles y código fuente, lo que facilita su implementación en proyectos de software. Este libro es especialmente útil para ingenieros, diseñadores, desarrolladores y científicos, siendo una guía para modelar y comunicar sistemas de software en la academia y en la industria de manera sistémica, promoviendo así la comprensión, colaboración y generación de soluciones de software más cercanas a la necesidad del interesado.
-  </p>
+  <!-- =========================
+       CONTENT
+       ========================= -->
 
-  <a class="boton" href="https://www.amazon.com/">📘 Leer / Descargar libro digital</a>
+  <main class="content">
 
-  <a class="boton" href="https://www.amazon.com/-/es/dp/B0HF32T428/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=24SE56URQWPZX&dib=eyJ2IjoiMSJ9.2ondFIWwz45Z7HYjV_IPsg.fMygMjEAlYYCb_-gZ1GK_vsKQB1UzZRklkzUNk73sFo&dib_tag=se&keywords=esquemas+preconceptuales&qid=1786618594&sprefix=esquemas+preconceptuale%2Caps%2C196&sr=8-1">🛒 Comprar versión Kindle o impresa</a>
+    <h1>Manual para la creación de Esquemas Preconceptuales</h1>
 
-  <h2>Cómo citar</h2>
-  <p>
-    Zapata, C.M., Noreña, P.A, & Suescún, E. (2026).
-    <em>Manual para la creación de Esquemas preconceptuales</em>.
-    Sello Editorial Uniautónoma del Cauca.
-  </p>
+
+    <div class="book-cover">
+
+      <a href="index.html">
+
+        <img src="img/portada.jpg"
+             alt="Portada del Manual para la creación de Esquemas Preconceptuales">
+
+      </a>
+
+    </div>
+
+
+    <div class="editorial-box">
+
+      <p><strong>Autores:</strong> Carlos Mario Zapata, Paola Noreña y Elizabeth Suescún</p>
+
+      <p><strong>Editorial:</strong> Sello Editorial Uniautónoma del Cauca</p>
+
+      <p><strong>Año:</strong> 2026</p>
+
+      <p><strong>Lugar de publicación:</strong> Medellín, Colombia</p>
+
+      <p><strong>ISBN:</strong> 978-628-7691-78-0</p>
+
+    </div>
+
+
+    <h2>Resumen</h2>
+
     <p>
-    Libro guía. Todos los derechos reservados 2026</em>.
-  </p>
+      Este manual ofrece una guía completa para la creación de Esquemas
+      Preconceptuales (EP), un modelo intermedio entre el lenguaje natural y los
+      esquemas conceptuales o lenguajes formales. Los EP permiten representar
+      sistemas de software en etapas tempranas de análisis y diseño mediante una
+      notación que integra características estructurales (elementos estáticos y
+      sus relaciones), dinámicas (interacciones, cambios en el tiempo y
+      comportamiento), télicas (objetivos y problemas) y eventuales (eventos que
+      desencadenan comportamientos).
+    </p>
 
-  <p><a href="index.html">⬅ Volver al inicio</a></p>
+    <p>
+      A lo largo del manual se establece la equivalencia de los EP con esquemas
+      conceptuales, artefactos ágiles y código fuente, lo que facilita su
+      implementación en proyectos de software. Este libro es especialmente útil
+      para ingenieros, diseñadores, desarrolladores y científicos, constituyendo
+      una guía para modelar y comunicar sistemas de software tanto en la academia
+      como en la industria de manera sistémica, promoviendo la comprensión, la
+      colaboración y la generación de soluciones de software más cercanas a las
+      necesidades de los interesados.
+    </p>
 
+
+    <h2>Acceso al libro</h2>
+
+    <a class="button"
+       href="https://www.amazon.com/"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      📘 Leer / Descargar libro digital
+
+    </a>
+
+
+    <a class="button"
+       href="https://www.amazon.com/-/es/dp/B0HF32T428/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=24SE56URQWPZX&dib=eyJ2IjoiMSJ9.2ondFIWwz45Z7HYjV_IPsg.fMygMjEAlYYCb_-gZ1GK_vsKQB1UzZRklkzUNk73sFo&dib_tag=se&keywords=esquemas+preconceptuales&qid=1786618594&sprefix=esquemas+preconceptuale%2Caps%2C196&sr=8-1"
+       target="_blank"
+       rel="noopener noreferrer">
+
+      🛒 Comprar versión Kindle o impresa
+
+    </a>
+
+
+    <h2>Cómo citar</h2>
+
+    <div class="citation">
+
+      <p>
+        Zapata, C. M., Noreña, P., & Suescún, E. (2026).
+        <em>Manual para la creación de Esquemas Preconceptuales</em>.
+        Sello Editorial Uniautónoma del Cauca.
+      </p>
+
+    </div>
+
+
+    <h2>Derechos</h2>
+
+    <p>
+      © 2026 Carlos Mario Zapata, Paola Noreña y Elizabeth Suescún.
+      Todos los derechos reservados.
+    </p>
 </body>
 </html>
